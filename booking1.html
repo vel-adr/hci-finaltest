@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/booking1.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Booking</title>
+</head>
+
+<body>
+    <section class="nav">
+        <div class="container">
+            <div class="brand">
+                <a href="./home.html">KLINIMEDIKA<sup>+</sup></a>
+            </div>
+            <div class="menu">
+                <div class="home">
+                    <a href="./home.html">Home</a>
+                </div>
+                <div class="booking">
+                    <a href="#">Booking</a>
+                </div>
+                <div class="account">
+                    <a href="./account.html">Account</a>
+                </div>
+                <div class="setting">
+                    <i class="fas fa-cog fa-1x"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="container">
+            <div class="msg">
+                <h3>Hi, John!</h3>
+                <p>Upcoming booking appointment:</p>
+                <div class="bookinfo">
+                    <div class="text">
+                        <div class="text_child">
+                            <i class="fas fa-tooth"></i>
+                            <p class="icontext">Poli Gigi</p>
+                        </div>
+                        <div class="text_child">
+                            <i class="fas fa-clock"></i>
+                            <p class="icontext">16.30</p>
+                        </div>
+                        <div class="text_child">
+                            <p>No. antrian : 5</p>
+                        </div>
+                        <div class="text_child">
+                            <p>Antrian saat ini : 3</p>
+                        </div>
+                    </div>
+                    <div class="qr">
+                        <i class="fas fa-qrcode fa-6x"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="book-form">
+                <h3>Booking Registration</h3>
+                <div class="input">
+                    <div class="service">
+                        <label for="service">Service :</label>
+                        <select name="service" id="service">
+                            <option value="0">-- Select Service --</option>
+                            <option value="gigi">Poli Gigi</option>
+                            <option value="bidan">Poli Bidan</option>
+                            <option value="umum">Poli Umum</option>
+                            <option value="lab">Laboratorium</option>
+                            <option value="fisio">Fisioterapis</option>
+                        </select>
+                    </div>
+                    <div class="date">
+                        <label for="date">Date :</label>
+                        <input type="date" placeholder="DD / MM / YYYY">
+                    </div>
+                    <div class="complaint">
+                        <label for="complaint">Complaint :</label>
+                        <textarea name="complaint" id="complaint" cols="30" rows="5"
+                            placeholder="Cold, Headache, etc."></textarea>
+                    </div>
+                    <div class="time">
+                        <label for="time">Time Preference :</label>
+                        <select name="time" id="time">
+                            <option value="0">-- Select Time --</option>
+                            <option value="morning">Morning</option>
+                            <option value="afternoon">Afternoon</option>
+                        </select>
+                    </div>
+                    <div class="button">
+                        <a href="#" id="book-btn">Booking</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="book-status">
+                <h4>Booking Status</h4>
+                <div class="gigi">
+                    <div class="info">
+                        <i class="fas fa-tooth"></i>
+                        <p class="text">Poli Gigi</p>
+                    </div>
+                    <p class="queue">Queue : 5</p>
+                </div>
+                <div class="bidan">
+                    <div class="info">
+                        <i class="fas fa-baby"></i>
+                        <p class="text">Poli Bidan</p>
+                    </div>
+                    <p class="queue">Queue : 5</p>
+                </div>
+                <div class="umum">
+                    <div class="info">
+                        <i class="fas fa-band-aid"></i>
+                        <p class="text">Poli Umum</p>
+                    </div>
+                    <p class="queue">Queue : 10</p>
+                </div>
+                <div class="lab">
+                    <div class="info">
+                        <i class="fas fa-microscope"></i>
+                        <p class="text">Laboratorium</p>
+                    </div>
+                    <p class="queue">Queue : 2</p>
+                </div>
+                <div class="fisio">
+                    <div class="info">
+                        <i class="fas fa-child"></i>
+                        <p class="text">Fisioterapis</p>
+                    </div>
+                    <p class="queue">Queue : 1</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <a href='https://www.freepik.com/free-photos-vectors/water'>Water vector created by upklyak - www.freepik.com</a> -->
+</body>
+
+</html>

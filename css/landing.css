@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Lato_reg;
+    src: url(../font/Lato-Regular.ttf) format('truetype');
+}
+
+body {
+    font-family: Lato_reg;
+    color: white;
+
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(#88CC88 0%, #60BB60 100%);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+}
+
+.header,
+.form {
+    z-index: 5;
+}
+
+.header {
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header p {
+    font-size: 0.8em;
+}
+
+.form {
+    text-align: center;
+    width: 30%;
+    background-color: rgba(251, 251, 251, 0.9);
+    color: #4d4d4d;
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 1em;
+}
+
+.form input {
+    margin-top: 1em;
+    width: 70%;
+}
+
+.form input[type=text],
+input[type=password] {
+    padding: 0.5em 1em;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form #submit {
+    background-color: #1D8FCF;
+    border: none;
+    border-radius: 15px;
+    padding: 0.3em 2em;
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    width: 40%;
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    margin: 3em auto 0;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form #submit:hover {
+    background-color: #3ba5e3;
+    transition: 0.3s ease;
+}
+
+.form p {
+    margin: 1.5em 0;
+}
+
+.form p:last-of-type {
+    margin-top: 3em;
+}
+
+.form a {
+    text-decoration: none;
+    color: #1D8FCF;
+}
+
+.form a:hover {
+    color: #3ba5e3;
+    transition: 0.3s ease;
+}
+
+.bg {
+    background-image: url(../img/drnurse.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+    background-position: center;
+    opacity: 0.3;
+}

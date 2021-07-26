@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Lato_reg;
+    src: url(../font/Lato-Regular.ttf) format('truetype');
+}
+
+body {
+    font-family: Lato_reg;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(#88CC88 0%, #60BB60 100%);
+}
+
+.nav .container{
+    height: 9vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em 0 2em;
+    background-color: rgba(0, 0, 0, 0.137);
+    position: fixed;
+    top: 0;
+}
+
+.nav .menu{
+    display: flex;
+    width: 40%;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+
+.nav .menu div{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    transition: 0.3s ease;
+}
+
+.nav .menu div:hover{
+    background-color: #3a3a3a23;
+    transition: 0.3s ease;
+}
+
+.nav a{
+    text-decoration: none;
+    color: #fbfbfb;
+}
+
+.nav .brand a{
+    font-size: 1.5em;
+    letter-spacing: 2px;
+}
+
+.nav .menu a{
+    font-size: 1.2em;
+}
+
+.nav .menu .setting{
+    cursor: pointer;
+}
+
+/* -------- NAV END --------*/
+
+.content .container{
+    height: 100vh;
+    width: 100%;
+    padding: 85px 2em 2em;
+    display: grid;
+    grid-template-areas: 
+    "book-self form"
+    "book-status form";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1em;
+    justify-items: center;
+    align-items: center;
+}
+
+.content .msg{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(251, 251, 251, 0.9);
+    color: #4d4d4d;
+    padding: 1.5em;
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.content .msg h3{
+    font-size: 2em;
+}
+
+.content .msg .bookinfo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ebebeb;
+    padding: 1em 0.4em;
+    border-radius: 15px;
+    margin-top: 1em;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.content .msg .bookinfo .text div{
+    display: flex;
+    flex-direction: row;
+    padding: 0.2em 0;
+}
+
+.content .msg .icontext{
+    margin-left: 8px;
+}
+
+/* -------- msg END ------ */
+
+.content .book-form{
+    grid-area: form;
+    width: 70%;
+    height: 100%;
+    background-color: rgba(251, 251, 251, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    color: #4d4d4d;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+.content .book-form h3{
+    margin-bottom: 1em;
+}
+
+.content .book-form .input{
+    width: 80%;
+    background-color: #ebebeb;
+    display: flex;
+    flex-direction: column;
+    padding: 1em 3em;
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.content .book-form .input div{
+    margin: 0.7em 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.content .book-form .input input, select,textarea{
+    border: none;
+    padding: 0.3em 0.5em;
+    border-radius: 15px;
+    margin-top: 5px;
+    font-family: Lato_reg;
+    color: #4d4d4d;
+}
+
+.content .book-form .input .button{
+    background-color: #1d8fcf;
+    text-align: center;
+    padding: 0.3em;
+    border-radius: 15px;
+}
+
+.content .book-form .input .button a{
+    text-decoration: none;
+    color: #fbfbfb;
+}
+
+
+/* Book form END */
+
+
+.content .book-status{
+    grid-area: book-status;
+    width: 80%;
+    height: 100%;
+    background-color: rgba(251, 251, 251, 0.9);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 1em;
+    color: #4d4d4d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content .book-status h4{
+    margin-bottom: 1em;
+}
+
+.content .book-status .info{
+    display: flex;
+}
+
+.content .book-status .info i{
+    margin-right: 7px;
+}
+
+.content .book-status>div{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7em;
+    background-color: #ebebeb;
+    margin: 0.3em 0;
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
